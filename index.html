@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+
+        <div id="container">
+
+            <header>
+                <h1 id="title">Customer Experience Survey</h1>
+
+                <p id="description">Thank you for helping us improve!</p>
+            </header>
+
+            <form id="survey-form" action="#">
+                <div class="form-field">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" class="long-input" placeholder="Enter Your Name" required />
+                </div>
+
+                <div class="form-field">
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" class="long-input" placeholder="Enter Your Email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="number" id="number-label">Order Number</label>
+                    <input id="number" class="long-input" type="number" min="0" max="10000"
+                        placeholder="Enter Your Order Number" />
+                </div>
+
+                <div class="form-field">
+                    <p class="p-label">How Often Do You Visit Our Store?</p>
+                    <select id="dropdown" class="long-input" required>
+                        <option disabled selected hidden>Select an option</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="occasionally">Occasionally</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <p class="p-label">How Would You Rate Your Purchase?</p>
+                    <label class="radio-rating"><input name="rating" type="radio" value="excellent" />Excellent</label>
+                    <label class="radio-rating"><input name="rating" type="radio" value="great" />Great</label>
+                    <label class="radio-rating"><input name="rating" type="radio" value="average" />Average</label>
+                    <label class="radio-rating"><input name="rating" type="radio" value="bad" />Bad</label>
+                    <label class="radio-rating"><input name="rating" type="radio" value="terrible" />Terrible</label>
+                </div>
+
+                <div class="form-field">
+                    <p class="p-label">Where Can We Improve?</p>
+                    <label class="checkbox-ratings"><input name="improve" type="checkbox"
+                            value="customer-service" />Customer Service</label>
+                    <label class="checkbox-ratings"><input name="improve" type="checkbox" value="speed" />Speed</label>
+                    <label class="checkbox-ratings"><input name="improve" type="checkbox"
+                            value="quality" />Quality</label>
+                    <label class="checkbox-ratings"><input name="improve" type="checkbox"
+                            value="convenience" />Convenience</label>
+                </div>
+
+                <div class="form-field">
+                    <br>
+                    <label>Additional Comments?</label>
+                    <textarea class="long-input"></textarea>
+                </div>
+
+                <div class="form-field">
+                    <button type="submit" id="submit" class="submit">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
